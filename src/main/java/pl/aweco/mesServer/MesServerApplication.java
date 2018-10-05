@@ -21,7 +21,7 @@ public class MesServerApplication {
 	public static void main(String[] args) {
 		RouterFunction route = route( GET("/"),
 				request -> {
-				String welcome = "Witaj na stronie aweco";
+				String welcome = "HAllo na stronie aweco";
 				LocalDateTime now = LocalDateTime.now();
 				DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 				String time = "\nCzas to " + now.format(myFormatter);
